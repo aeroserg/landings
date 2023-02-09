@@ -1,0 +1,260 @@
+body {
+    color: #616161;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main-img {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.main-main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -14px;
+    position: relative;  /* added position property */
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top:-350px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+.main-part {
+    width: 50%;
+    padding: 30px 30px 30px 60px;
+
+}
+.main-main-left-logo img{
+    width: 150px;
+}
+h1 {
+    color: #000;
+    margin:60px 0 30px 0 ;
+}
+.b-h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.main-main-left-img {
+    box-sizing: border-box;
+}
+
+.form-group, .form-select {
+    margin-bottom: 20px;
+    font-size: 14px;
+   
+}
+input::placeholder {
+    font-size: 14px;
+}
+.main-main-left-img img {
+    width: 100%;
+}
+.btn {
+    background-color: #fe0000;
+    padding:20px 0 ;
+    width: 100%;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+.main-main-right {
+    box-sizing: border-box;
+}
+.nonheader {
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.b-h4 {
+    color: #616161;
+    font-size: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px ;
+    margin-top: 70px ;
+}
+.sub-info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 25%;
+}
+.sub-info img {
+    width: 80%;
+}
+.info-sub {
+    width: 80%;
+    margin: 0 auto;
+}
+.sub-info-panel {
+    background-color: #fe0000;
+    display: flex;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    padding:0 60px;
+
+}
+.panel-img {
+    width: 33.333%;
+    text-align: center;
+    
+}
+.sub-info-panel img {
+    width: 80%;
+}
+.sub-info-header {
+    font-size:140%;
+    text-transform:uppercase;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0 0px 0;
+    font-weight: bold;
+}
+.info-sub .sub-info-header {
+    font-size:140%;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.sub-info-header span {
+    color: #fe0000;
+}
+.info-sub {
+    margin-bottom: 40px;
+}
+.bottom_logo {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 80%;
+    justify-content: flex-end;
+}
+.bottom_logo img {
+    width: 150px;
+}
+.sub-info p {
+    font-weight: bold;
+    font-size: 18px;
+}
+.main-main-left-img-second {
+    display: none;
+}
+
+/* скрываем ненужные поля */
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* медиа запросы */
+@media screen and (max-width: 992px) {
+
+.main-main {
+    flex-direction: column;
+    margin-top: -36%;
+}
+.main-part {
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+}
+.main-main-left-logo {
+    text-align: center;
+}
+.b-h2 {
+    font-size: 100%;
+}
+.b-h4 {
+    font-size: 100%;
+}
+.info {
+    flex-direction: column;
+}
+.sub-info {
+    width: 100%;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 438px) and (max-width:992px) {
+    .sub-info {
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .info {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .panel-img {
+    width: 50%;
+    text-align: center;
+    
+}
+.panel-img {
+    width: 100%;
+}
+.main-main-left-img {
+    display: none;
+}
+.main-main-left-img-second {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 25px;
+    
+}
+.main-main-left-img-second img {
+    width: 100%;
+    border-radius: 20px;
+}
+.b-h2:nth-of-type(2) {
+    margin-bottom: 0;
+}
+}
+
+
+@media screen and (max-width:354px) {
+    h1 {
+        font-size: 7vw;
+    }
+    .main-main-left-logo img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .sub-info-panel {
+        padding: 0 30px;
+    }
+}
