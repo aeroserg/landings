@@ -98,13 +98,19 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <input minlength="16" maxlength="16" type="text" class="form-control" id="inputPhone" placeholder="+7(xxx)-xxx-xx-xx" required>
+                      <label for="inputPhone">Контактные данные</label>
+                      <input minlength="16" maxlength="16" type="text" class="form-control" name="inputPhone" id="inputPhone" placeholder="+7(xxx)-xxx-xx-xx" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-grou hidden">
                       <input type="email" class="form-control" id="inputEmail" placeholder="email">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group hidden">
                       <input type="text" class="form-control" id="inputCity" placeholder="Город">
+                    </div>
+                    <div class=" checkbox">
+                      <label for="inputAgreement"></label>
+                      <input type="checkbox" class="form-checkbox" id="inputAgreement" name="inputAgreement" required>
+                      Я соглашаюсь с <a href="#agreement" class="pop-up" id="pop-up">правилами обработки персональных данных</a>
                     </div>
                     <button id="sendButton" type="submit" class="btn btn-primary">Отправить анкету</button>
         
@@ -140,6 +146,31 @@
 
     </div>
 </main>
+<div class="b-modal" id="b-modal">
+  <div class="b-modal-close" id="closeX"></div>
+  <div class="b-modal_body" id="b-modal-body">
+    <div class="modal_header">
+      Политика в области обработки и защиты персональных данных
+    </div>
+    <div class="span_header_first">
+Согласие
+    </div>
+    <div class="span_header_second">
+на обработку персональных данных
+    </div>
+    <div class="modal_text">
+<p>
+  с целью содействия в трудоустройстве даю своей волей и в своем интересе согласиеОАО «РЖД» (107174, г. Москва, ул. Новая Басманная, д. 2)
+  и ООО «СТАФФДЖЕТ» (236006, Калининградская обл., г. Калининград, ул. Ленинский просп., 30А, офис 7)на автоматизированную
+  и неавтоматизированную обработку в части сбора, записи, систематизации, накопления, хранения, уточнения (обновления, изменения), извлечения, использования, обезличивания, блокирования, удаления, уничтожения следующих моих персональных данных: ФИО (в т.ч. предыдущие фамилии, имена и (или) отчества в случае их изменения), дата рождения (число, месяц, год рождения), место рождения (как записано в паспорте), адрес регистрации (полный), адрес фактического проживания (полный), номер контактного телефона (мобильный, домашний при наличии), адрес электронной почты, СНИЛС, ИНН, паспортные данные (серия, номер, кем выдан, дата выдачи, когда выдан), семейное положение с указанием степени родства, ФИО жены/мужа, детей, год рождения, а также копии следующих документов, содержащих мои персональные данные: ИНН, СНИЛС, страницы паспорта (первая и с регистрацией по месту жительства).
+  Согласие на обработку персональных данных действует с даты его подписания до достижения цели обработки.
+  Согласие на обработку персональных данных может быть отозвано путем подачи письменного заявления.
+  В случаях, предусмотренных законодательством Российской Федерации, ОАО «РЖД» вправе продолжить обработку персональных данных без моего согласия.</p>
+    </div>
+  </div>
+</div>
+<script src="{{media_url}}js/main.js" defer></script>
+<script src="{{media_url}}js/send_data.js" defer></script>
 {{yandex_metrica}}
 </body>
 </html>
